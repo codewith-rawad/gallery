@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --value:220px
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(45deg,rgb(182, 88, 88),rgb(101, 101, 182));
+}
+.container{
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 300px;
+    overflow: hidden;
+    background-color: rgb(191, 147, 147);
+   
+}
+.container img{
+height: 90%;
+width: var(--value);
+border-radius: 10px;
+
+}
+.slider{
+    border-radius: inherit;
+    gap: 25px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: move 17s infinite linear ;
+}
+
+@keyframes move {
+    from{
+
+    }
+    to{
+        transform: translateX(calc(var(--value) * 6))
+    }
+    
+}
